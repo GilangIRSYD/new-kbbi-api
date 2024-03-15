@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const config_1 = require("../config");
 const KbbiController_1 = require("../controllers/KbbiController");
 const router = (0, express_1.Router)();
 router.get("/", function (req, res) {
@@ -9,7 +8,7 @@ router.get("/", function (req, res) {
         message: "Welcome to New KBBI API",
         developer: "https://github.com/btrianurdin",
         endpoint: "/cari/[kosa kata]",
-        example: `${config_1.default.baseUrl}/cari/demokrasi`,
+        // example: `${Config.baseUrl}/cari/demokrasi`,
     });
 });
 router

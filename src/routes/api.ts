@@ -9,7 +9,7 @@ router.get("/", function (req: Request, res: Response) {
     message: "Welcome to New KBBI API",
     developer: "https://github.com/btrianurdin",
     endpoint: "/cari/[kosa kata]",
-    example: `${Config.baseUrl}/cari/demokrasi`,
+    // example: `${Config.baseUrl}/cari/demokrasi`,
   });
 });
 
